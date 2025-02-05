@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+.container{
+ height: 100vh;
+ width: 100wh;
+    
+
+}
+.navcontainer{
+    background-color: #FA709A;
+background-image: linear-gradient(90deg, #FA709A 0%, #FEE140 100%);
+
+    width: 100wh;
+    min-height: 90px;
+    display: flex;
+    justify-content: center;
+
+}
+#navlist{
+    list-style:none;
+    /* color: white;*/
+   
+    /* position:fixed; */
+    font-size: 2.8rem;
+    color: white;
+    padding: 15px;
+    display: flex;
+
+    justify-content: space-between;
+    /* display: inline;
+    justify-content: space-between;*/
+    margin-left: 20px; 
+    margin-bottom: 20px;
+
+}
+nav{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.containtbox{
+    width: 90%;
+   margin: auto;
+   /* text-align: center; */
+   font-size: 2.4rem;
+   /* border: 1px solid black; */
+   box-shadow: 5px 5px 50px black;
+}
+.item
+{
+    display: flex;
+    justify-content: space-between;
+    float:none;
+}
+.item2
+{
+    display: flex;
+    justify-content: space-between;
+}
+.item3
+{
+    display: flex;
+    justify-content: space-between;
+}
+.rightbox{
+/* border-radius: 30px; */
+padding: 50px;
+transition: all 2s linear 2s;
+
+ position: relative;
+/*overflow: hidden; */
+/* box-shadow: 2px 2px 2px black; */
+}
+.rightbox img{
+    border-radius: 30px;
+ transition: all 2s linear 2s; 
+ height: 1000px;
+ width: 500px;
+}
+.rightbox2 img{
+    border-radius: 30px;
+ transition: all 2s linear 2s; 
+ height: 1000px;
+ width: 500px;
+}
+.rightbox3 img{
+    border-radius: 30px;
+ transition: all 2s linear 2s; 
+ height: 1000px;
+ width: 500px;
+}
+.rightbox2{
+/* border-radius: 50px; */
+padding: 50px;
+transition: all 2s linear 2s;
+/* box-shadow: 2px 2px 2px black; */
+
+position: relative;
+/* overflow: hidden; */
+}
+.rightbox3{
+/* border-radius: 50px; */
+padding: 50px;
+transition: all 2s linear 2s;
+position: relative;
+/* box-shadow: 2px 2px 2px black; */
+
+/* overflow: hidden; */
+}
+.rightbox:hover{
+   transform: scale(1.2);
+}
+.rightbox2:hover{
+    transform: scale(1.2);
+}
+.rightbox3:hover{
+    transform: scale(1.2);
+}
+#c1{
+list-style: none;
+}
+#c2{
+list-style: none;
+}
+#c3{
+list-style: none;
+}
+#chan1{
+list-style: none;
+}
+#chan2{
+list-style: none;
+}
+#chan3{
+list-style: none;
+}
+#pix1{
+color: indianred;
+text-shadow:3px 3px 10px black;
+}
+#pix2{
+ color: indianred;  
+ text-shadow:3px 3px 10px black; 
+}
+#pix3{
+ color: indianred;
+ text-shadow:3px 3px 10px black ;   
+}
+.leftbox{
+padding: 30px;
+}
+.leftbox2{
+padding: 30px;
+}
+.leftbox3{
+padding: 30px;
+}
+#start{
+   display: flex;
+   justify-content: end;
+   align-items: end;
+}
+ .rightbox .overlay{
+position:absolute;
+top: 0;
+left: 0;
+height:100%;
+width:100%;
+/* background-color: darkslategrey; */
+/* border-radius: 30px; */
+display: flex;
+justify-content: center;
+align-items: center;
+opacity:0;
+/* transition:all 2s linear 2s ;  */
+ }
+.rightbox :hover.overlay{
+opacity:1;
+} 
+.rightbox2.overlay2{
+    position:absolute;
+ top: 0;
+left: 0; 
+height:100%;
+width:100%;
+/* background-color: darkslategrey; */
+/* border-radius: 30px; */
+display: flex;
+justify-content: center;
+align-items: center;
+opacity:0;
+/* transition:all 2s linear 2s ;  */
+}
+ .rightbox2:hover.overlay2{
+opacity:1;
+} 
+.rightbox3.overlay3{
+    position:absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+/* background-color: darkslategrey; */
+/* border-radius: 30px; */
+display: flex;
+justify-content: center;
+align-items: center;
+opacity:0;
+/* transition:all 2s linear 2s ;    */
+}
+span{
+color:darkgray;
+font-size: 1.8rem;
+}
+
+.rightbox3:hover.overlay3{
+opacity:1;
+}
+footer{
+    width: 100%;
+    
+}
+.footerbox{
+    background-color: #FA709A;
+background-image: linear-gradient(90deg, #FA709A 0%, #FEE140 100%);
+text-align: center;
+width: 100%;
+min-height: 70px;
+
+}
+.footerbox p{
+    color: azure;
+    font-size: 2rem;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <div class="navcontainer">
+        <nav>
+        <ul  id="navlist">
+          <li>
+                <p>
+              <h2>CodeHelp Ka Dhaaba
+              </h2>
+              </p>
+            </li>
+            <li id="start">
+                <div><a href="#">Home</a>
+            <a href="#">Contact</a>
+        <a href="#">About</a>
+
+            </div>
+        </li>
+        </ul>
+        </nav>
+    </div>
+    <main>
+<div class="containtbox">
+   <section>
+    <div class="item">
+        <div class="leftbox">
+            <h2 id="pix1">Pizza</h2>
+            <h3>Ingredients</h3>
+            <ul id="c1">
+                <li>Plain Flour</li>
+                <li>Curd</li>
+                <li>Baking Soda</li>
+                <li>Baking Powder</li>
+                <li>Paneer</li>
+                <li>Pizza souce</li>
+                <li>Cheeze</li>
+                <li>Sweet Corn</li>
+            </ul>
+            <h3>Recipe</h3>
+            <ol id="chan1">
+           <li>Add the flour, salt, sugar, and olive oil, and using the mixing paddle attachment, mix on low speed for a minute. Then replace the mixing paddle with the dough hook attachment.</li>
+
+              <li>  Knead the pizza dough on low to medium speed using the dough hook about 7-10 minutes.</li>
+                
+              <li>  If you don't have a mixer, you can mix the ingredients together and knead them by hand.</li>
+                
+              <li>  The dough should be a little sticky, or tacky to the touch. If it's too wet, sprinkle in a little more flour.
+                Spoon on the tomato sauce, sprinkle with cheese, and place your desired toppings on the pizza. Be careful not to overload the pizza with too many toppings, or your pizza will be soggy.
+            Now your pizza is ready
+              </li>
+            </ol>
+
+        </div>
+        <div class="rightbox">
+            <img src="https://imgmedia.lbb.in/media/2019/07/5d242ad8e93a896e5542da0d_1562651352251.jpg"  alt="pizza" >
+        <div class="overlay">
+            <span>click here</span>
+        </div>
+        </div>
+    </div>
+   </section>
+   <br>
+    <section>
+     <div class="item2">
+         <div class="leftbox">
+             <h2 id="pix2">Pasta</h2>
+             <h3>Ingredients</h3>
+             <ul id="c2">
+                 <li>Raw pasta</li>
+                 <li>Curd</li>
+                 <li>Baking Soda</li>
+                 <li>Baking Powder</li>
+                 <li>Paneer</li>
+                 <li>Pasta souce</li>
+                 <li>Cheeze</li>
+                 <li>Sweet Corn</li>
+             </ul>
+             <h3>Recipe</h3>
+             <ol id="chan2">
+            <li>Add the flour, salt, sugar, and olive oil, and using the mixing paddle attachment, mix on low speed for a minute. Then replace the mixing paddle with the dough hook attachment.</li>
+ 
+               <li>  Knead the pizza dough on low to medium speed using the dough hook about 7-10 minutes.</li>
+                 
+               <li>  If you don't have a mixer, you can mix the ingredients together and knead them by hand.</li>
+                 
+               <li>  The dough should be a little sticky, or tacky to the touch. If it's too wet, sprinkle in a little more flour.
+                 Spoon on the tomato sauce, sprinkle with cheese, and place your desired toppings on the pizza. Be careful not to overload the pizza with too many toppings, or your pizza will be soggy.
+             Now your pizza is ready
+               </li>
+             </ol>
+ 
+         </div>
+         <div class="rightbox2">
+             <img src="https://www.sharmispassions.com/wp-content/uploads/2020/03/WhiteSaucePasta6-500x375.jpg" alt="Pasta" >
+         
+         <div class="overlay2">
+            <span>click here</span>
+         </div>
+         </div>
+     </div>
+    </section>
+ <br>
+        <section>
+         <div class="item3">
+             <div class="leftbox">
+                 <h2 id="pix3">Momos</h2>
+                 <h3>Ingredients</h3>
+                 <ul id="c3">
+                     <li>Plain Flour</li>
+                     <li>cabbage</li>
+                     <li>carrot</li>
+                     <li>More veggi</li>
+                     <li>Nutrella</li>
+                     <li>Sezwaan Souce</li>
+                 </ul>
+                 <h3>Recipe</h3>
+                 <ol id="chan3">
+                <li>Add the flour, salt, sugar, and olive oil, and using the mixing paddle attachment, mix on low speed for a minute. Then replace the mixing paddle with the dough hook attachment.</li>
+     
+                   <li>  Knead the pizza dough on low to medium speed using the dough hook about 7-10 minutes.</li>
+                     
+                   <li>  If you don't have a mixer, you can mix the ingredients together and knead them by hand.</li>
+                     
+                   <li>  The dough should be a little sticky, or tacky to the touch. If it's too wet, sprinkle in a little more flour.
+                     Spoon on the tomato sauce, sprinkle with cheese, and place your desired toppings on the pizza. Be careful not to overload the pizza with too many toppings, or your pizza will be soggy.
+                 Now your pizza is ready
+                   </li>
+                 </ol>
+     
+             </div>
+             <div class="rightbox3">
+                 <img src="https://www.foodieist.com/wp-content/uploads/2020/12/veg-momos-recipe.jpg" alt="Momos"  >
+                    <div class="overlay3">
+                 <span>click here</span>
+                 </div>
+             </div>
+                </div>
+        
+        </section>
+     <br>
+</div>
+</main>
+<br>
+    <footer>
+   <div class="footerbox">
+<p>
+    Copyright &copy;CodeHelp da Dhaaba Pvt Ltd 2023 All Rights Reserved
+</p>
+   </div>
+   </footer>
+   
+
+    
+</body>
+</html>
